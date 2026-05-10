@@ -6,7 +6,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/brundhas26/guavaApp.git'
+                git branch: 'main',
+                url: 'https://github.com/brundhas26/guavaApp.git'
             }
         }
 
